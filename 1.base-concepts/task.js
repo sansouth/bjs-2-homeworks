@@ -3,7 +3,7 @@ function solveEquation(a, b, c) {
   let arr = [];
   let D = b**2-4*a*c
   let x1, x2;
-  
+
   if (D < 0) {
     console.log("корней нет")
   }
@@ -19,6 +19,10 @@ function solveEquation(a, b, c) {
   return arr;
 }
 
+
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
-  
+  Let P = (percent / 100) / 12;
+  Let S = amount - contribution;
+  Let n = countMonths;
+  Let payment = S * (P + (P / (((1 + P)^n) - 1)))
 }
